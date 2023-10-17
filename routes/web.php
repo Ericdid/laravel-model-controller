@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PageController;
 
+use App\Models\Movie;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PageController::class, 'index'])->name('home');
+
+
+// rotta risorsa movies
+Route::get('/movies', [PageController::class, 'index'])->name('movies.index');
