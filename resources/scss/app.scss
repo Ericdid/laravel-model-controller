@@ -3,6 +3,14 @@
 
 @import "~bootstrap/scss/bootstrap";
 
-h1 {
-    color: $primary_color;
+section {
+    background-color: $bg_color;
+    .col-2 {
+        background-color: rgb(4, 4, 134);
+        border: 2px solid $secondary_color;
+        color: whitesmoke;
+        h2 {
+            color: $primary_color;
+        }
+    }
 }
